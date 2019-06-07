@@ -20,6 +20,7 @@ $env:Path +=";%ALLUSERSPROFILE%\chocolatey\bin"
 
 choco install powershell-packagemanagement -y
 choco install visualstudio2017community -y
+choco install dotnet4.6.2 -y
 choco install visualstudio2017-workload-netcoretools -y
 choco install visualstudio2017-workload-netweb -y
 choco install visualstudio2017-workload-node -y

@@ -1,0 +1,22 @@
+releases:
+- name: windows-netframework-dev-tools
+  version: 7
+
+addons:
+- name: windows-dev-tools
+  jobs:
+  - name: windows-netframework-dev-tools
+    release: windows-netframework-dev-tools
+  include:
+    stemcell:
+    - os: windows2019
+    - os: windows
+    - os: windows2016
+    - os: windows2012R2
+    deployments:
+    - concourse
+  exclude:
+    stemcell:
+    - os: ubuntu-trusty
+    - os: ubuntu-xenial
+    - os: ubuntu
