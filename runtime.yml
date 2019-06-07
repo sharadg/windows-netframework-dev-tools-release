@@ -1,6 +1,6 @@
 releases:
 - name: windows-netframework-dev-tools
-  version: 7
+  version: 7+dev.2
 
 addons:
 - name: windows-dev-tools
