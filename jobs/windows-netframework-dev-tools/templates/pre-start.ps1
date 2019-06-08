@@ -19,14 +19,20 @@ Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | Invoke-E
 $env:Path +=";%ALLUSERSPROFILE%\chocolatey\bin"
 
 choco install powershell-packagemanagement -y
-choco install visualstudio2017community -y
-choco install dotnet4.6.2 -y
-choco install visualstudio2017-workload-netcoretools -y
-choco install visualstudio2017-workload-netweb -y
-choco install visualstudio2017-workload-node -y
-choco install visualstudio2017-workload-azure -y
-choco install visualstudio2017-workload-nativedesktop -y
-choco install visualstudio2017-workload-manageddesktop -y
+#choco install visualstudio2017community -y
+#choco install visualstudio2017-workload-netcoretools -y
+#choco install visualstudio2017-workload-netweb -y
+#choco install visualstudio2017-workload-node -y
+#choco install visualstudio2017-workload-azure -y
+#choco install visualstudio2017-workload-nativedesktop -y
+#choco install visualstudio2017-workload-manageddesktop -y
+choco install visualstudio2019community -y
+choco install visualstudio2019-workload-netcorebuildtools -y
+choco install visualstudio2019-workload-netweb-y
+choco install visualstudio2019-workload-node -y
+choco install visualstudio2019-workload-azure -y
+choco install visualstudio2019-workload-nativedesktop -y
+choco install visualstudio2019-workload-netcrossplat -y
 choco install nodejs.install -y
 choco install cloudfoundry-cli -y
 choco install nuget.commandline -y
